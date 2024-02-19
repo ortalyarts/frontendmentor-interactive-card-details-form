@@ -24,7 +24,7 @@
         <div id="preview-date"><span id="preview-month">00</span>/<span id="preview-year">00</span></div>
       </div>
     </div>
-    <div id="form-holder">
+    <div id="form-holder" aria-controls="submitMessage">
       <form id="card-inputs">
         <span>
           <label for="name">Cardholder Name</label>
@@ -59,7 +59,7 @@
     </div>
 
     <!-- Success message start -->
-    <section class="success-message-container hide">
+    <section class="success-message-container hide" id="submitMessage" aria-live="polite">
       <div class="success-message">
         <img src="./images/icon-complete.svg" alt="" width="80" height="80"/>
         <h2>Thank you!</h2>

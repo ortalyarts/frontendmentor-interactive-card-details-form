@@ -46,6 +46,7 @@ inputCvc.addEventListener('keyup', ()=>{
 const showSuccessMessage = () =>{
   mainHolder.classList.add('hide');
   successMessage.classList.remove('hide');
+  btnDismiss.focus(); // programmatic focus for Screen readers
 }
 btnDismiss.addEventListener('click', () =>{
   successMessage.classList.add('hide');
