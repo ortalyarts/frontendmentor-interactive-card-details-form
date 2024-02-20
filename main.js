@@ -19,6 +19,15 @@ const previewCvc = document.querySelector('#preview-cvc');
 let userNumber;
 let formattedNumber;
 
+// prevent typing letters in number fields
+const onInputNumbers = event => {
+  event.target.value = event.target.value.replace(/[^0-9+]/g, '')
+}
+// allow typing only letters in name field
+const onInputLetters = event => {
+  event.target.value = event.target.value.replace(/[^a-zA-Z\s]/g, '')
+}
+
 //Updating card text on typing
 const updateCardValue = (field, text) => {
   field.innerText= text;
@@ -135,7 +144,7 @@ function validate(inputId, inputType){
     if (inputId.value == "") {
       addError("Can't be blank");
       isValidYear = false;
-    } else if (inputId.value.length !== 2 || isNaN(inputId.value) || inputId.value < 0) { 
+    } else if (inputId.value.length !== 2 || isNaN(inputId.value) || inputId.value < 24) { 
       addError('Wrong format');
       isValidYear = false;
     } else{
