@@ -51,7 +51,7 @@ body {
     text-align:left; 
     font-family: var(--sansserif);
     background:url(./images/bg-main-mobile.png) no-repeat top;
-    padding:0rem 1.5rem 1rem 1.5rem;
+    padding:0rem 0 1rem  0;
     min-height: 100vh; 
     display:flex; flex-direction:column; 
 }
@@ -139,8 +139,8 @@ form#card-inputs {
 }
 form#card-inputs label, form#card-inputs legend{
   color:var(--color4);
-  font-size:0.78rem;
-  letter-spacing: 0.05rem;
+  font-size:0.76rem;
+  letter-spacing: 0.02rem;
   line-height:2rem;
   text-transform: uppercase;
   transition: border 0.5s;
