@@ -172,9 +172,14 @@ form#card-inputs input{
   padding:0;
   margin:0;
   border:0;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
+  display:flex;
+  /* display:grid;
+  grid-template-columns: 1fr 1fr; */
   gap:0.625rem;
+}
+legend {
+  padding:0;
+  width:100%;
 }
 .btn {
   width:100%;
@@ -320,6 +325,12 @@ footer, footer a {
     left:2.125rem;
     font-size:1.61rem;
     letter-spacing:0.29rem;
+    text-decoration:none;
+    color:inherit;
+  }
+  #preview-number a {
+    text-decoration:none;
+    color:inherit;
   }
   #preview-name {
     top:12.4rem;
