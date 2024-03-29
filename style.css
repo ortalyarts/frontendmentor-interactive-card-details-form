@@ -140,7 +140,7 @@ form#card-inputs {
 form#card-inputs label, form#card-inputs legend{
   color:var(--color4);
   font-size:0.78rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   line-height:2rem;
   text-transform: uppercase;
   transition: border 0.5s;
